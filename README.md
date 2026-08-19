@@ -95,8 +95,8 @@ Aplicación web desarrollada con **Python y Django** para la gestión de cursos,
 
 ## Idiomas
 
-- 🇦🇷 **Español:** Nativo
-- 🇬🇧 **Inglés:** Intermedio (lectura y escritura)
+- **Español:** Nativo
+- **Inglés:** Intermedio (lectura y escritura)
 
 ---
 
