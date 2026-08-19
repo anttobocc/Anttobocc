@@ -1,10 +1,10 @@
-# 👋 Hi, I'm Antonella Boccalandro
+# Hi, I'm Antonella Boccalandro
 
-### 💻 Software Developer | Estudiante de Desarrollo de Software
+### Software Developer | Estudiante de Desarrollo de Software
 
 ---
 
-## 👩‍💻 Sobre mí
+## Sobre mí
 
 Soy estudiante avanzada de la **Tecnicatura Superior en Desarrollo de Software** y actualmente me encuentro finalizando mi formación en el área de tecnología.
 
@@ -16,7 +16,7 @@ Durante mi formación académica desarrollé diferentes proyectos que me permiti
 
 ---
 
-## 🎯 Objetivo profesional
+## Objetivo profesional
 
 Mi objetivo es continuar desarrollándome profesionalmente en el área de **Desarrollo de Software y Desarrollo Web**, adquiriendo experiencia y fortaleciendo mis conocimientos mediante proyectos y nuevas experiencias.
 
@@ -26,37 +26,37 @@ También tengo interés en áreas relacionadas con la **gestión de datos, optim
 
 ---
 
-## 🛠️ Habilidades técnicas
+## Habilidades técnicas
 
-### 💻 Programación
+### Programación
 - Python
 - C
 - C++
 - JavaScript
 
-### 🌐 Desarrollo Web
+### Desarrollo Web
 - HTML5
 - CSS3
 - JavaScript
 - Django
 
-### 🗄️ Bases de datos
+### Bases de datos
 - SQL
 - Gestión y organización de datos
 
-### 🔧 Herramientas
+### Herramientas
 - Git
 - GitHub
 - Visual Studio Code
 
-### 🔌 Hardware & Software
+### Hardware & Software
 - Integración de hardware y software
 - Proyectos IoT
 - Desarrollo de soluciones tecnológicas
 
 ---
 
-## 🧠 Habilidades personales
+## Habilidades personales
 
 - Trabajo en equipo
 - Productividad
@@ -69,7 +69,7 @@ También tengo interés en áreas relacionadas con la **gestión de datos, optim
 
 ---
 
-## 📚 Actualmente aprendiendo
+## Actualmente aprendiendo
 
 - Desarrollo de Software
 - Desarrollo Web
@@ -80,37 +80,37 @@ También tengo interés en áreas relacionadas con la **gestión de datos, optim
 
 ---
 
-## 🚀 Proyectos destacados
+## Proyectos destacados
 
-### 🍽️ Comedero Automático Inteligente
+### Comedero Automático Inteligente
 Proyecto de integración **IoT + Hardware + Software + Web**, desarrollado utilizando un microcontrolador y diferentes tecnologías para automatizar la alimentación de una mascota.
 
-### 💻 Codix
+### Codix
 Proyecto educativo orientado a facilitar el aprendizaje de conceptos de programación mediante una experiencia interactiva, combinando contenido educativo, diseño y tecnología.
 
-### 📚 Proyecto Gestor de Cursos
+### Proyecto Gestor de Cursos
 Aplicación web desarrollada con **Python y Django** para la gestión de cursos, estudiantes, profesores y entregables.
 
 ---
 
-## 🌎 Idiomas
+## Idiomas
 
 - 🇦🇷 **Español:** Nativo
 - 🇬🇧 **Inglés:** Intermedio (lectura y escritura)
 
 ---
 
-## 📫 Contacto
+## Contacto
 
-📧 **Email:** antobocca@gmail.com
+**Email:** antobocca@gmail.com
 
-🔗 **LinkedIn:** [Antonella Boccalandro](TU_LINKEDIN)
+**LinkedIn:** [Antonella Boccalandro](TU_LINKEDIN)
 
-💻 **GitHub:** [@anttobocc](https://github.com/anttobocc)
+**GitHub:** [@anttobocc](https://github.com/anttobocc)
 
 ---
 
-## 🌱 Un poco más sobre mí
+## Un poco más sobre mí
 
 Me interesa seguir creciendo en el área tecnológica, aprender nuevas herramientas y transformar los conocimientos adquiridos durante mi formación en proyectos reales.
 
