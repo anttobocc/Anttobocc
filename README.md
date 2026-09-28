@@ -1,117 +1,131 @@
-# Hi, I'm Antonella Boccalandro
+# Hi 👋, I'm Antonella Boccalandro
 
 ### Software Developer | Estudiante de Desarrollo de Software
 
 ---
 
-## Sobre mí
+## 👩‍💻 About me
 
-Soy estudiante avanzada de la **Tecnicatura Superior en Desarrollo de Software** y actualmente me encuentro finalizando mi formación en el área de tecnología.
+Soy estudiante avanzada de la **Tecnicatura Superior en Desarrollo de Software**, actualmente finalizando mi formación.
 
-Me interesa especialmente el **desarrollo de software y web**, la creación de soluciones tecnológicas y la integración entre **hardware y software (IoT)**.
+Me interesa especialmente el **desarrollo de software y desarrollo web**, la creación de aplicaciones y la resolución de problemas mediante tecnología.
 
-Me considero una persona **proactiva, organizada y orientada a procesos**, con interés en la resolución de problemas, el trabajo en equipo y el aprendizaje continuo.
+Durante mi formación desarrollé diferentes proyectos académicos y personales que me permitieron aplicar conocimientos de **programación, desarrollo web, bases de datos y desarrollo de aplicaciones**.
 
-Durante mi formación académica desarrollé diferentes proyectos que me permitieron adquirir experiencia práctica y aplicar mis conocimientos en programación, desarrollo web, bases de datos e integración de hardware y software.
-
----
-
-## Objetivo profesional
-
-Mi objetivo es continuar desarrollándome profesionalmente en el área de **Desarrollo de Software y Desarrollo Web**, adquiriendo experiencia y fortaleciendo mis conocimientos mediante proyectos y nuevas experiencias.
-
-A largo plazo, busco seguir creciendo dentro del sector tecnológico, participando en la creación, mantenimiento y optimización de aplicaciones y soluciones digitales.
-
-También tengo interés en áreas relacionadas con la **gestión de datos, optimización de procesos y organización de información**.
+Actualmente estoy enfocada en seguir fortaleciendo mis conocimientos y adquirir experiencia profesional en el área de desarrollo de software.
 
 ---
 
-## Habilidades técnicas
+## 🚀 Currently
 
-### Programación
+- 🎓 Finalizando la Tecnicatura Superior en Desarrollo de Software.
+- 💻 Desarrollando proyectos web y aplicaciones.
+- 🐍 Trabajando con Python y Django.
+- ⚛️ Trabajando con React y TypeScript.
+- 🗄️ Desarrollando proyectos con bases de datos.
+- 🔧 Utilizando Git y GitHub para gestionar mis proyectos.
+- 📚 Aprendiendo continuamente nuevas tecnologías.
+- 💼 Interesada en comenzar mi experiencia profesional en el área de software.
+
+---
+
+## 🛠️ Languages and Tools
+
+### Languages
+
+<p>
+  <img src="https://skillicons.dev/icons?i=python,js,ts,c,cpp" />
+</p>
+
+### Web Development
+
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,django,react,vite,nodejs,express" />
+</p>
+
+### Databases
+
+<p>
+  <img src="https://skillicons.dev/icons?i=postgresql,sqlite,prisma" />
+</p>
+
+### Tools
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,vscode" />
+</p>
+
+---
+
+## 📂 Featured Projects
+
+### 🎓 CODIX — Gestor de Cursos
+
+Proyecto orientado a la gestión de cursos y contenidos educativos.
+
+**Tecnologías:**  
+Python · Django · React · TypeScript · PostgreSQL
+
+---
+
+### 🧁 Caprichos.Store.Ctes
+
+Aplicación web desarrollada para una tienda de productos de pastelería, con gestión de productos, pedidos, usuarios y panel administrativo.
+
+**Tecnologías:**  
+Python · Django · SQLite · HTML · CSS · JavaScript
+
+---
+
+### 💻 Playcode
+
+Aplicación frontend desarrollada con React y TypeScript como interfaz para la gestión y visualización de información relacionada con CODIX.
+
+**Tecnologías:**  
+React · TypeScript · Vite
+
+---
+
+## 📚 Currently Learning
+
 - Python
-- C
-- C++
-- JavaScript
-
-### Desarrollo Web
-- HTML5
-- CSS3
-- JavaScript
 - Django
-
-### Bases de datos
-- SQL
-- Gestión y organización de datos
-
-### Herramientas
-- Git
-- GitHub
-- Visual Studio Code
-
-### Hardware & Software
-- Integración de hardware y software
-- Proyectos IoT
-- Desarrollo de soluciones tecnológicas
-
----
-
-## Habilidades personales
-
-- Trabajo en equipo
-- Productividad
-- Creatividad
-- Pensamiento lógico
-- Organización
-- Resolución de problemas
-- Adaptabilidad
-- Aprendizaje continuo
-
----
-
-## Actualmente aprendiendo
-
-- Desarrollo de Software
-- Desarrollo Web
-- Python y Django
+- React
+- TypeScript
 - Bases de datos
-- Integración Hardware + Software
-- Nuevas herramientas y tecnologías
+- Desarrollo de APIs
+- Git y GitHub
+- Buenas prácticas de desarrollo
+- Inglés técnico
 
 ---
 
-## Proyectos destacados
+## 🌐 My Portfolio
 
-### Comedero Automático Inteligente
-Proyecto de integración **IoT + Hardware + Software + Web**, desarrollado utilizando un microcontrolador y diferentes tecnologías para automatizar la alimentación de una mascota.
-
-### Codix
-Proyecto educativo orientado a facilitar el aprendizaje de conceptos de programación mediante una experiencia interactiva, combinando contenido educativo, diseño y tecnología.
-
-### Proyecto Gestor de Cursos
-Aplicación web desarrollada con **Python y Django** para la gestión de cursos, estudiantes, profesores y entregables.
+<p align="center">
+  <a href="TU_URL_DEL_PORTFOLIO">
+    <img src="https://img.shields.io/badge/🚀%20Ver%20mi%20Portfolio-6C5CE7?style=for-the-badge" />
+  </a>
+</p>
 
 ---
 
-## Idiomas
+## 📫 Contact
 
-- **Español:** Nativo
-- **Inglés:** Intermedio (lectura y escritura)
+📧 **Email:** anttobocca@gmail.com
 
----
+💻 **GitHub:** [@anttobocc](https://github.com/anttobocc)
 
-## Contacto
-
-**Email:** antobocca@gmail.com
-
-**LinkedIn:** [Antonella Boccalandro](TU_LINKEDIN)
-
-**GitHub:** [@anttobocc](https://github.com/anttobocc)
+🔗 **LinkedIn:** [Antonella Boccalandro](https://www.linkedin.com/in/boccalandro-antonella/)
 
 ---
 
-## Un poco más sobre mí
+## ✨ A little more about me
 
-Me interesa seguir creciendo en el área tecnológica, aprender nuevas herramientas y transformar los conocimientos adquiridos durante mi formación en proyectos reales.
+Me gusta aprender haciendo y utilizar cada proyecto como una oportunidad para mejorar mis conocimientos.
 
-Estoy especialmente interesada en oportunidades que me permitan **aprender, adquirir experiencia y aportar mis conocimientos**, mientras continúo desarrollándome como profesional del software.
+Mi objetivo es seguir creciendo profesionalmente en el área de **Desarrollo de Software**, adquirir experiencia en proyectos reales y continuar aprendiendo nuevas tecnologías.
+
+---
+
+⭐ Gracias por visitar mi perfil.
