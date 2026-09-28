@@ -59,7 +59,7 @@ Actualmente estoy enfocada en seguir fortaleciendo mis conocimientos y adquirir 
 
 ## 📂 Featured Projects
 
-### 🎓 CODIX — Gestor de Cursos
+### 🎓 EduControl — Gestor de Cursos
 
 Proyecto orientado a la gestión de cursos y contenidos educativos.
 
@@ -68,7 +68,7 @@ Python · Django · React · TypeScript · PostgreSQL
 
 ---
 
-### 🧁 Caprichos.Store.Ctes
+### 🧁 Caprichos
 
 Aplicación web desarrollada para una tienda de productos de pastelería, con gestión de productos, pedidos, usuarios y panel administrativo.
 
