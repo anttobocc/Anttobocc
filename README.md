@@ -1,130 +1,111 @@
-# Hi 👋, I'm Antonella Boccalandro
+# 👋 Hola, soy Antonella Boccalandro
 
 ### Software Developer | Estudiante de Desarrollo de Software
 
+💻 Desarrollo web · 🐍 Python · ⚛️ React · 🗄️ Bases de datos · 🌐 IoT
+
+📍 Corrientes, Argentina
+
+[🌐 Portfolio](https://anttobocc.pythonanywhere.com/) · [💼 LinkedIn](https://www.linkedin.com/in/boccalandro-antonella/) · [📧 Email](mailto:anttobocca@gmail.com)
+
+
 ---
 
-## 👩‍💻 About me
+## 👩‍💻 Sobre mí
 
 Soy estudiante avanzada de la **Tecnicatura Superior en Desarrollo de Software**, actualmente finalizando mi formación.
 
-Me interesa especialmente el **desarrollo de software y desarrollo web**, la creación de aplicaciones y la resolución de problemas mediante tecnología.
+Me interesa especialmente el **desarrollo web, la creación de aplicaciones y la resolución de problemas mediante tecnología**.
 
-Durante mi formación desarrollé diferentes proyectos académicos y personales que me permitieron aplicar conocimientos de **programación, desarrollo web, bases de datos y desarrollo de aplicaciones**.
+Durante mi formación desarrollé proyectos académicos y personales trabajando con frontend, backend, bases de datos y sistemas IoT.
 
-Actualmente estoy enfocada en seguir fortaleciendo mis conocimientos y adquirir experiencia profesional en el área de desarrollo de software.
+Actualmente estoy enfocada en seguir fortaleciendo mis conocimientos y comenzar mi experiencia profesional en el área de desarrollo de software.
 
----
-
-## 🚀 Currently
-
-- 🎓 Finalizando la Tecnicatura Superior en Desarrollo de Software.
-- 💻 Desarrollando proyectos web y aplicaciones.
-- 🐍 Trabajando con Python y Django.
-- ⚛️ Trabajando con React y TypeScript.
-- 🗄️ Desarrollando proyectos con bases de datos.
-- 🔧 Utilizando Git y GitHub para gestionar mis proyectos.
-- 📚 Aprendiendo continuamente nuevas tecnologías.
-- 💼 Interesada en comenzar mi experiencia profesional en el área de software.
 
 ---
 
-## 🛠️ Languages and Tools
+## 🛠️ Stack
 
 ### Languages
 
-<p>
-  <img src="https://skillicons.dev/icons?i=python,js,ts,c,cpp" />
-</p>
+![Python](https://skillicons.dev/icons?i=python)
+![JavaScript](https://skillicons.dev/icons?i=js)
+![TypeScript](https://skillicons.dev/icons?i=ts)
+![C](https://skillicons.dev/icons?i=c)
+![C++](https://skillicons.dev/icons?i=cpp)
 
 ### Web Development
 
-<p>
-  <img src="https://skillicons.dev/icons?i=html,css,django,react,vite,nodejs,express" />
-</p>
+![HTML](https://skillicons.dev/icons?i=html)
+![CSS](https://skillicons.dev/icons?i=css)
+![Django](https://skillicons.dev/icons?i=django)
+![React](https://skillicons.dev/icons?i=react)
+![Vite](https://skillicons.dev/icons?i=vite)
+![Node.js](https://skillicons.dev/icons?i=nodejs)
+![Express](https://skillicons.dev/icons?i=express)
 
 ### Databases
 
-<p>
-  <img src="https://skillicons.dev/icons?i=postgresql,sqlite,prisma" />
-</p>
+![PostgreSQL](https://skillicons.dev/icons?i=postgresql)
+![SQLite](https://skillicons.dev/icons?i=sqlite)
+![Prisma](https://skillicons.dev/icons?i=prisma)
 
 ### Tools
 
-<p>
-  <img src="https://skillicons.dev/icons?i=git,github,vscode" />
-</p>
+![Git](https://skillicons.dev/icons?i=git)
+![GitHub](https://skillicons.dev/icons?i=github)
+![VS Code](https://skillicons.dev/icons?i=vscode)
+
 
 ---
 
-## 📂 Featured Projects
+## 🚀 Featured Projects
 
-### 🎓 EduControl — Gestor de Cursos
+| Proyecto | Descripción | Stack |
+|----------|-------------|-------|
+| 🧁 **[Caprichos](https://github.com/anttobocc/Caprichos.Store.Ctes)** | E-commerce gastronómico para un emprendimiento de pastelería. | Django · Python · SQLite |
+| 🎓 **EduControl** | Sistema de gestión académica para cursos, estudiantes, profesores y entregables. | Django · React · TypeScript · PostgreSQL |
+| 💻 **PlayCode** | Aplicación web tipo playground para practicar programación. | React · TypeScript · Vite |
+| 🥗 **Nutrivid** | Tienda online desarrollada para una dietética con múltiples sucursales. | Django · Python · JavaScript |
+| 💅 **[MerceNails](https://github.com/anttobocc/MerceNails---Gestor-de-turnos-)** | Sistema web de gestión de turnos para un emprendimiento de uñas. | Django · Python · JavaScript |
+| 🐶 **Comedero IoT** | Sistema IoT para automatizar la alimentación de mascotas mediante ESP8266. | C/C++ · ESP8266 · HTML · CSS · JavaScript |
 
-Proyecto orientado a la gestión de cursos y contenidos educativos.
+👉 Podés conocer más proyectos en mi [portfolio](https://anttobocc.pythonanywhere.com/).
 
-**Tecnologías:**  
-Python · Django · React · TypeScript · PostgreSQL
-
----
-
-### 🧁 Caprichos
-
-Aplicación web desarrollada para una tienda de productos de pastelería, con gestión de productos, pedidos, usuarios y panel administrativo.
-
-**Tecnologías:**  
-Python · Django · SQLite · HTML · CSS · JavaScript
 
 ---
 
-### 💻 Playcode
+## 📚 Actualmente
 
-Aplicación frontend desarrollada con React y TypeScript como interfaz para la gestión y visualización de información relacionada con CODIX.
+- 🎓 Finalizando la Tecnicatura Superior en Desarrollo de Software.
+- 💻 Desarrollando proyectos web y aplicaciones.
+- 🐍 Profundizando mis conocimientos en Python y Django.
+- ⚛️ Trabajando con React y TypeScript.
+- 🗄️ Fortaleciendo mis conocimientos en bases de datos.
+- 🔧 Mejorando mis prácticas con Git y GitHub.
+- 📚 Aprendiendo nuevas tecnologías y buenas prácticas.
+- 💼 Buscando comenzar mi experiencia profesional en desarrollo de software.
 
-**Tecnologías:**  
-React · TypeScript · Vite
-
----
-
-## 📚 Currently Learning
-
-- Python
-- Django
-- React
-- TypeScript
-- Bases de datos
-- Desarrollo de APIs
-- Git y GitHub
-- Buenas prácticas de desarrollo
-- Inglés técnico
 
 ---
 
-## 🌐 My Portfolio
+## 🎯 Objetivo
 
-<p align="center">
-  <a href="https://anttobocc.pythonanywhere.com/">
-    <img src="https://img.shields.io/badge/🚀%20Ver%20mi%20Portfolio-6C5CE7?style=for-the-badge" />
-  </a>
-</p>
+Seguir creciendo como desarrolladora, participar en proyectos reales y continuar construyendo soluciones que combinen **tecnología, funcionalidad y una buena experiencia de usuario**.
+
 
 ---
 
-## 📫 Contact
+## 🌐 Conectemos
 
-📧 **Email:** anttobocca@gmail.com
+📧 **Email:** [anttobocca@gmail.com](mailto:anttobocca@gmail.com)
 
-💻 **GitHub:** [@anttobocc](https://github.com/anttobocc)
+💼 **LinkedIn:** [Antonella Boccalandro](https://www.linkedin.com/in/boccalandro-antonella/)
 
-🔗 **LinkedIn:** [Antonella Boccalandro](https://www.linkedin.com/in/boccalandro-antonella/)
+🐙 **GitHub:** [@anttobocc](https://github.com/anttobocc)
 
----
+🌐 **Portfolio:** [anttobocc.pythonanywhere.com](https://anttobocc.pythonanywhere.com/)
 
-## ✨ A little more about me
-
-Me gusta aprender haciendo y utilizar cada proyecto como una oportunidad para mejorar mis conocimientos.
-
-Mi objetivo es seguir creciendo profesionalmente en el área de **Desarrollo de Software**, adquirir experiencia en proyectos reales y continuar aprendiendo nuevas tecnologías.
 
 ---
 
