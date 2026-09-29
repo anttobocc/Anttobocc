@@ -68,7 +68,7 @@ Actualmente estoy enfocada en seguir fortaleciendo mis conocimientos y comenzar 
 | 💻 **[PlayCode](https://github.com/mimbicaceres/playcode-app)** | Aplicación web tipo playground para practicar programación. | React · TypeScript · Vite |
 | 🥗 **[Nutrivid](https://github.com/anttobocc/Nutrivid)** | Tienda online desarrollada para una dietética con múltiples sucursales. | Django · Python · JavaScript |
 | 💅 **[MerceNails](https://github.com/anttobocc/MerceNails---Gestor-de-turnos-)** | Sistema web de gestión de turnos para un emprendimiento de uñas. | Django · Python · JavaScript |
-| 🐶 **[NutriPet](https://github.com/anttobocc/NutriPet-iot-esp8266)** | Sistema IoT para automatizar la alimentación de mascotas mediante ESP8266. | C/C++ · ESP8266 · HTML · CSS · JavaScript |
+| 🐶 **[NutriPet  ](https://github.com/anttobocc/NutriPet-iot-esp8266)** | Sistema IoT para automatizar la alimentación de mascotas mediante ESP8266. | C/C++ · ESP8266 · HTML · CSS · JavaScript |
 
 👉 Podés conocer más proyectos en mi [portfolio](https://anttobocc.pythonanywhere.com/).
 
