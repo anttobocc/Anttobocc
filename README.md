@@ -63,12 +63,12 @@ Actualmente estoy enfocada en seguir fortaleciendo mis conocimientos y comenzar 
 
 | Proyecto | Descripción | Stack |
 |----------|-------------|-------|
-| 🧁 **[Caprichos](https://github.com/anttobocc/Caprichos.Store.Ctes)** | E-commerce gastronómico para un emprendimiento de pastelería. | Django · Python · SQLite |
-| 🎓 **[EduControl](https://github.com/anttobocc/ProyectoGestorCursos)** | Sistema de gestión académica para cursos, estudiantes, profesores y entregables. | Django · React · TypeScript · PostgreSQL |
-| 💻 **[PlayCode](https://github.com/mimbicaceres/playcode-app)** | Aplicación web tipo playground para practicar programación. | React · TypeScript · Vite |
-| 🥗 **[Nutrivid](https://github.com/anttobocc/Nutrivid)** | Tienda online desarrollada para una dietética con múltiples sucursales. | Django · Python · JavaScript |
-| 💅 **[MerceNails](https://github.com/anttobocc/MerceNails---Gestor-de-turnos-)** | Sistema web de gestión de turnos para un emprendimiento de uñas. | Django · Python · JavaScript |
-| 🐶 **[NutriPet  ](https://github.com/anttobocc/NutriPet-iot-esp8266)** | Sistema IoT para automatizar la alimentación de mascotas mediante ESP8266. | C/C++ · ESP8266 · HTML · CSS · JavaScript |
+| 🧁&nbsp;**[Caprichos](https://github.com/anttobocc/Caprichos.Store.Ctes)** | E-commerce gastronómico para un emprendimiento de pastelería. | Django · Python · SQLite |
+| 🎓&nbsp;**[EduControl](https://github.com/anttobocc/ProyectoGestorCursos)** | Sistema de gestión académica para cursos, estudiantes, profesores y entregables. | Django · React · TypeScript · PostgreSQL |
+| 💻&nbsp;**[PlayCode](https://github.com/mimbicaceres/playcode-app)** | Aplicación web tipo playground para practicar programación. | React · TypeScript · Vite |
+| 🥗&nbsp;**[Nutrivid](https://github.com/anttobocc/Nutrivid)** | Tienda online desarrollada para una dietética con múltiples sucursales. | Django · Python · JavaScript |
+| 💅&nbsp;**[MerceNails](https://github.com/anttobocc/MerceNails---Gestor-de-turnos-)** | Sistema web de gestión de turnos para un emprendimiento de uñas. | Django · Python · JavaScript |
+| 🐶&nbsp;**[NutriPet](https://github.com/anttobocc/NutriPet-iot-esp8266)** | Sistema IoT para automatizar la alimentación de mascotas mediante ESP8266. | C/C++ · ESP8266 · HTML · CSS · JavaScript |
 
 👉 Podés conocer más proyectos en mi [portfolio](https://anttobocc.pythonanywhere.com/).
 
