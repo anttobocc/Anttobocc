@@ -17,7 +17,7 @@ Soy estudiante avanzada de la **Tecnicatura Superior en Desarrollo de Software**
 
 Me interesa especialmente el **desarrollo web, la creación de aplicaciones y la resolución de problemas mediante tecnología**.
 
-Durante mi formación desarrollé proyectos académicos y personales trabajando con frontend, backend, bases de datos y sistemas IoT.
+Durante mi formación desarrollé proyectos académicos y personales trabajando con frontend, backend, bases de datos y hardware.
 
 Actualmente estoy enfocada en seguir fortaleciendo mis conocimientos y comenzar mi experiencia profesional en el área de desarrollo de software.
 
