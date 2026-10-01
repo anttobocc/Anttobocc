@@ -1,25 +1,30 @@
-// Tema claro / oscuro
+// Tema claro / oscuro (el valor inicial se aplica en el <head>)
 const root = document.documentElement;
 const themeToggle = document.getElementById("themeToggle");
 
-try {
-  const saved = localStorage.getItem("theme");
-  if (saved) root.setAttribute("data-theme", saved);
-} catch (e) {}
+function syncThemeLabel() {
+  const dark = root.dataset.theme !== "light";
+  themeToggle.setAttribute("aria-label", dark ? "Cambiar a modo claro" : "Cambiar a modo oscuro");
+}
+syncThemeLabel();
 
 themeToggle.addEventListener("click", () => {
-  const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-  root.setAttribute("data-theme", next);
+  const next = root.dataset.theme === "light" ? "dark" : "light";
+  root.dataset.theme = next;
+  syncThemeLabel();
   try { localStorage.setItem("theme", next); } catch (e) {}
 });
 
 // Menú mobile
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
-menuBtn.addEventListener("click", () => navLinks.classList.toggle("open"));
-navLinks.querySelectorAll("a").forEach((a) =>
-  a.addEventListener("click", () => navLinks.classList.remove("open"))
-);
+function setMenu(open) {
+  navLinks.classList.toggle("open", open);
+  menuBtn.setAttribute("aria-expanded", String(open));
+  menuBtn.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+}
+menuBtn.addEventListener("click", () => setMenu(!navLinks.classList.contains("open")));
+navLinks.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
 
 // Link activo según la sección visible
 const sections = document.querySelectorAll("main section[id]");
