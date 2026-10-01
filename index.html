@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark">
+<html lang="es" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,16 +7,16 @@
   <meta name="description" content="Portafolio de Antonella Boccalandro, desarrolladora de software." />
   <meta name="color-scheme" content="dark light" />
   <script>
-    // Tema antes del primer pintado: oscuro por defecto, respeta la elección guardada
-    try { document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark"; } catch (e) {}
+    // Tema antes del primer pintado: claro por defecto, respeta la elección guardada
+    try { document.documentElement.dataset.theme = localStorage.getItem("tema") || "light"; } catch (e) {}
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Nunito:wght@500;800&family=Caveat:wght@600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
   <link rel="preload" as="image" href="assets/img/capricho.webp" />
-  <link rel="stylesheet" href="styles.css?v=9" />
+  <link rel="stylesheet" href="styles.css?v=150" />
 </head>
 <body>
 
@@ -34,8 +34,8 @@
       <div class="nav-actions">
         <a href="https://github.com/anttobocc" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub"><i class="devicon-github-original"></i></a>
         <a href="https://www.linkedin.com/in/boccalandro-antonella/" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn"><i class="devicon-linkedin-plain"></i></a>
-        <button class="icon-btn" id="themeToggle" aria-label="Cambiar a modo claro">
-          <i class="ph ph-sun sun"></i><i class="ph ph-moon moon"></i>
+        <button class="icon-btn" id="themeToggle" aria-label="Cambiar a modo oscuro">
+          <i class="ph ph-moon moon"></i><i class="ph ph-sun sun"></i>
         </button>
         <button class="icon-btn menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
           <i class="ph ph-list"></i>
@@ -50,8 +50,8 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="hero-kicker">Desarrolladora de software</p>
-          <h1>Hago webs completas, y&nbsp;a&nbsp;veces hasta el hardware.</h1>
-          <p class="hero-sub">Estudiante avanzada de Desarrollo de Software. Hice tiendas online, un gestor de turnos y un dispensador IoT para mascotas.</p>
+          <h1>Hago webs completas, y siempre un poco más de lo que me piden.</h1>
+          <p class="hero-sub">Tiendas online, sistemas de turnos y hasta un dispensador para mascotas que programé desde la placa.</p>
           <div class="hero-ctas">
             <a href="#proyectos" class="btn btn-primary">Ver proyectos <i class="ph ph-arrow-down"></i></a>
             <a href="#contacto" class="btn btn-ghost">Contactarme</a>
@@ -59,15 +59,23 @@
         </div>
 
         <div class="hero-visual">
+          <p class="hand hand--drag" aria-hidden="true">
+            ¡arrastrame!
+            <svg viewBox="0 0 60 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6c4 16 20 26 46 26" /><path d="M42 22l11 10-12 6" /></svg>
+          </p>
           <div class="browser-stack">
-            <a href="#proyectos" class="browser browser-main" aria-label="Capricho: ver en proyectos">
+            <div class="browser browser-main">
               <span class="browser-bar"><span class="browser-name">capricho</span></span>
-              <img src="assets/img/capricho.webp" width="1200" height="800" alt="Captura de Capricho, tienda online de empanadas y pastelería" fetchpriority="high" />
-            </a>
-            <a href="#proyectos" class="browser browser-front" aria-label="MerceNails: ver en proyectos">
+              <a href="#proyectos" aria-label="Capricho: ver en proyectos">
+                <img src="assets/img/capricho.webp" width="1200" height="800" alt="Captura de Capricho, tienda online de empanadas y pastelería" fetchpriority="high" />
+              </a>
+            </div>
+            <div class="browser browser-front">
               <span class="browser-bar"><span class="browser-name">mercenails</span></span>
-              <img src="assets/img/mercenails.webp" width="1200" height="630" alt="Captura de MerceNails, sitio con reserva de turnos para un estudio de uñas" />
-            </a>
+              <a href="#proyectos" aria-label="MerceNails: ver en proyectos">
+                <img src="assets/img/mercenails.webp" width="1200" height="630" alt="Captura de MerceNails, sitio con reserva de turnos para un estudio de uñas" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -149,7 +157,7 @@
             </div>
           </div>
           <figure class="hw-shot">
-            <img src="assets/img/nutripet.webp" width="748" height="817" loading="lazy" alt="Interfaz web de NutriPet con el estado del dispensador y los horarios de comida" />
+            <div class="thumb"><img src="assets/img/nutripet.webp" width="748" height="817" loading="lazy" alt="Interfaz web de NutriPet con el estado del dispensador y los horarios de comida" /></div>
             <figcaption>La interfaz la sirve el propio ESP8266.</figcaption>
           </figure>
         </article>
@@ -157,10 +165,10 @@
         <h3 class="group-title">Otros proyectos</h3>
         <div class="others-grid">
           <article class="project-row reveal">
-            <img src="assets/img/gestor-cursos.webp" width="1200" height="800" loading="lazy" alt="Captura de EduControl, el gestor de cursos" />
+            <div class="thumb"><img src="assets/img/educontrol.webp" width="1200" height="800" loading="lazy" alt="Captura de EduControl, sistema de gestión académica" /></div>
             <div>
               <span class="cat">Sistema de gestión</span>
-              <h4>Gestor de Cursos</h4>
+              <h4>EduControl</h4>
               <p>Sistema de gestión académica para cursos, estudiantes, profesores, asistencias y entregables.</p>
               <ul class="tags"><li>Django</li><li>React</li><li>TypeScript</li><li>PostgreSQL</li><li>Bootstrap</li></ul>
               <div class="project-actions">
@@ -170,7 +178,7 @@
           </article>
 
           <article class="project-row reveal">
-            <img src="assets/img/playcode.webp" width="1200" height="541" loading="lazy" alt="Captura de la pantalla de inicio de PlayCode" />
+            <div class="thumb"><img src="assets/img/playcode.webp" width="1200" height="541" loading="lazy" alt="Captura de la pantalla de inicio de PlayCode" /></div>
             <div>
               <span class="cat">Web app</span>
               <h4>PlayCode</h4>
@@ -201,53 +209,54 @@
             <div class="cluster cluster--front" style="--n: 8">
               <span class="silk">frontend</span>
               <div class="keys">
-                <button type="button" class="key" aria-pressed="false" style="--cap: #61dafb; --ink: #101114" data-name="React" data-desc="Pienso en componentes hasta cuando armo la lista del súper. Está en Gestor de Cursos y en PlayCode."><span class="cap"><i class="devicon-react-original" aria-hidden="true"></i><span class="key-label">React</span></span></button>
-                <button type="button" class="key" aria-pressed="false" style="--cap: #3178c6; --ink: #f7f7f8" data-name="TypeScript" data-desc="JavaScript, pero con alguien que te avisa antes de que explote. Gestor de Cursos y PlayCode."><span class="cap"><i class="devicon-typescript-plain" aria-hidden="true"></i><span class="key-label">TypeScript</span></span></button>
-                <button type="button" class="key" aria-pressed="false" style="--cap: #f7df1e; --ink: #101114" data-name="JavaScript" data-desc="El que le da vida a los botones. Anda suelto en Capricho, Nutrivid, MerceNails y la interfaz de NutriPet."><span class="cap"><i class="devicon-javascript-plain" aria-hidden="true"></i><span class="key-label">JavaScript</span></span></button>
-                <button type="button" class="key" aria-pressed="false" style="--cap: #e34f26; --ink: #101114" data-name="HTML" data-desc="Los cimientos. Nadie los aplaude, pero sin ellos se caen Capricho, Nutrivid, MerceNails y la pantalla de NutriPet."><span class="cap"><i class="devicon-html5-plain" aria-hidden="true"></i><span class="key-label">HTML</span></span></button>
-                <button type="button" class="key" aria-pressed="false" style="--cap: #264de4; --ink: #f7f7f8" data-name="CSS" data-desc="Centrar un div ya no me quita el sueño. Le dio estilo a Capricho, Nutrivid, MerceNails y NutriPet."><span class="cap"><i class="devicon-css3-plain" aria-hidden="true"></i><span class="key-label">CSS</span></span></button>
-                <button type="button" class="key" aria-pressed="false" style="--cap: #646cff; --ink: #101114" data-name="Vite" data-desc="Guardo y ya recargó, antes de que se enfríe el mate. Lo usé en PlayCode."><span class="cap"><i class="devicon-vitejs-plain" aria-hidden="true"></i><span class="key-label">Vite</span></span></button>
-                <button type="button" class="key" aria-pressed="false" style="--cap: #7952b3; --ink: #f7f7f8" data-name="Bootstrap" data-desc="Botones prolijos sin pelearme con el CSS. Le puso los componentes a Gestor de Cursos."><span class="cap"><i class="devicon-bootstrap-plain" aria-hidden="true"></i><span class="key-label">Bootstrap</span></span></button>
-                <button type="button" class="key" aria-pressed="false" style="--cap: #38bdf8; --ink: #101114" data-name="Tailwind" data-desc="Clases cortitas, HTML largo, cero arrepentimiento. Le dio estilo a PlayCode."><span class="cap"><i class="devicon-tailwindcss-original" aria-hidden="true"></i><span class="key-label">Tailwind</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #9fb4f7; --side: #7086d6; --ink: #23336e" data-name="React" data-desc="Pienso en componentes hasta cuando armo la lista del súper. Está en EduControl y en PlayCode."><span class="cap"><i class="devicon-react-original" aria-hidden="true"></i><span class="key-label">React</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #b9a3f0; --side: #8d74d0; --ink: #33206e" data-name="TypeScript" data-desc="JavaScript, pero con alguien que te avisa antes de que explote. EduControl y PlayCode."><span class="cap"><span class="glyph" aria-hidden="true">TS</span><span class="key-label">TypeScript</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #f5c75a; --side: #d39f2c; --ink: #3d2c05" data-name="JavaScript" data-desc="El que le da vida a los botones. Anda suelto en Capricho, Nutrivid, MerceNails y la interfaz de NutriPet."><span class="cap"><span class="glyph" aria-hidden="true">JS</span><span class="key-label">JavaScript</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #f58c76; --side: #d4654f; --ink: #4a160b" data-name="HTML" data-desc="Los cimientos. Nadie los aplaude, pero sin ellos se caen Capricho, Nutrivid, MerceNails y la pantalla de NutriPet."><span class="cap"><i class="devicon-html5-plain" aria-hidden="true"></i><span class="key-label">HTML</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #6c9fee; --side: #4675c4; --ink: #0f2552" data-name="CSS" data-desc="Centrar un div ya no me quita el sueño. Le dio estilo a Capricho, Nutrivid, MerceNails y NutriPet."><span class="cap"><i class="devicon-css3-plain" aria-hidden="true"></i><span class="key-label">CSS</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #8fd4b4; --side: #63b08e; --ink: #11402c" data-name="Vite" data-desc="Guardo y ya recargó, antes de que se enfríe el mate. Lo usé en PlayCode."><span class="cap"><i class="devicon-vitejs-plain" aria-hidden="true"></i><span class="key-label">Vite</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #f0a1c0; --side: #cc7697; --ink: #571632" data-name="Bootstrap" data-desc="Botones prolijos sin pelearme con el CSS. Le puso los componentes a EduControl."><span class="cap"><i class="devicon-bootstrap-plain" aria-hidden="true"></i><span class="key-label">Bootstrap</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #f2b0c9; --side: #cf84a2; --ink: #5a1834" data-name="Tailwind" data-desc="Clases cortitas, HTML largo, cero arrepentimiento. Le dio estilo a PlayCode."><span class="cap"><i class="devicon-tailwindcss-original" aria-hidden="true"></i><span class="key-label">Tailwind</span></span></button>
               </div>
             </div>
             <div class="cluster cluster--back" style="--n: 4">
               <span class="silk">backend</span>
               <div class="keys">
-                <button type="button" class="key" aria-pressed="false" style="--cap: #3776ab; --ink: #f7f7f8" data-name="Python" data-desc="Mi primer amor del backend. Corre debajo de Capricho, Nutrivid, MerceNails y Gestor de Cursos."><span class="cap"><i class="devicon-python-plain" aria-hidden="true"></i><span class="key-label">Python</span></span></button>
-                <button type="button" class="key" aria-pressed="false" style="--cap: #0c4b33; --ink: #f7f7f8" data-name="Django" data-desc="Mi framework de cabecera. Está detrás de Capricho, Nutrivid, MerceNails y Gestor de Cursos, y nunca me pidió nada a cambio."><span class="cap"><i class="devicon-django-plain" aria-hidden="true"></i><span class="key-label">Django</span></span></button>
-                <button type="button" class="key" aria-pressed="false" style="--cap: #5fa04e; --ink: #101114" data-name="Node.js" data-desc="JavaScript fuera del navegador, sin pedir permiso. Corre el servidor de PlayCode."><span class="cap"><i class="devicon-nodejs-plain" aria-hidden="true"></i><span class="key-label">Node.js</span></span></button>
-                <button type="button" class="key" aria-pressed="false" style="--cap: #2b2b2b; --ink: #f7f7f8" data-name="Express" data-desc="Rutas, middlewares y a otra cosa. Arma la API de PlayCode."><span class="cap"><i class="devicon-express-original" aria-hidden="true"></i><span class="key-label">Express</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #7fb2ee; --side: #5a8ccd; --ink: #10325e" data-name="Python" data-desc="Mi primer amor del backend. Corre debajo de Capricho, Nutrivid, MerceNails y EduControl."><span class="cap"><i class="devicon-python-plain" aria-hidden="true"></i><span class="key-label">Python</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #74c69e; --side: #4b9d74; --ink: #0c3a24" data-name="Django" data-desc="Mi framework de cabecera. Está detrás de Capricho, Nutrivid, MerceNails y EduControl, y nunca me pidió nada a cambio."><span class="cap"><i class="devicon-django-plain" aria-hidden="true"></i><span class="key-label">Django</span></span></button>
+                <button type="button" class="key key--dark" aria-pressed="false" style="--cap: #3a3a42; --side: #232328; --ink: #ecebf0" data-name="Node.js" data-desc="JavaScript fuera del navegador, sin pedir permiso. Corre el servidor de PlayCode."><span class="cap"><i class="devicon-nodejs-plain" aria-hidden="true"></i><span class="key-label">Node.js</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #ece6d8; --side: #c9c0ad; --ink: #2d2a24" data-name="Express" data-desc="Rutas, middlewares y a otra cosa. Arma la API de PlayCode."><span class="cap"><i class="devicon-express-original" aria-hidden="true"></i><span class="key-label">Express</span></span></button>
               </div>
             </div>
             <div class="oled" aria-hidden="true">
-              <span class="oled-title" id="oledTitle">antonella@pad</span>
-              <p class="oled-text"><span id="oledText"></span><span class="oled-cursor">_</span></p>
+              <span class="oled-bar"><span></span><span></span><span></span></span>
+              <span class="oled-title" id="oledTitle">antonella</span>
+              <p class="oled-text"><span id="oledText"></span><span class="oled-cursor"></span></p>
             </div>
             </div>
             <div class="pad-row">
             <div class="cluster cluster--data" style="--n: 3">
               <span class="silk">datos</span>
               <div class="keys">
-                <button type="button" class="key" aria-pressed="false" style="--cap: #336791; --ink: #f7f7f8" data-name="PostgreSQL" data-desc="La base seria del grupo. Guarda los datos de Gestor de Cursos y PlayCode."><span class="cap"><i class="devicon-postgresql-plain" aria-hidden="true"></i><span class="key-label">PostgreSQL</span></span></button>
-                <button type="button" class="key" aria-pressed="false" style="--cap: #0f5a7a; --ink: #f7f7f8" data-name="SQLite" data-desc="La base de datos que entra en un bolsillo. Ahí viven los catálogos de Capricho y Nutrivid, y los turnos de MerceNails."><span class="cap"><i class="devicon-sqlite-plain" aria-hidden="true"></i><span class="key-label">SQLite</span></span></button>
-                <button type="button" class="key" aria-pressed="false" style="--cap: #2d3748; --ink: #f7f7f8" data-name="Prisma" data-desc="Le hablo a la base en TypeScript y me entiende. Lo usé en el backend de PlayCode."><span class="cap"><i class="devicon-prisma-original" aria-hidden="true"></i><span class="key-label">Prisma</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #b29cf0; --side: #8b72d1; --ink: #2d1a6b" data-name="PostgreSQL" data-desc="La base seria del grupo. Guarda los datos de EduControl y PlayCode."><span class="cap"><i class="devicon-postgresql-plain" aria-hidden="true"></i><span class="key-label">PostgreSQL</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #7eabf0; --side: #5584cf; --ink: #0e2b5c" data-name="SQLite" data-desc="La base de datos que entra en un bolsillo. Ahí viven los catálogos de Capricho y Nutrivid, y los turnos de MerceNails."><span class="cap"><i class="ph ph-feather" aria-hidden="true"></i><span class="key-label">SQLite</span></span></button>
+                <button type="button" class="key key--dark" aria-pressed="false" style="--cap: #3a3a42; --side: #232328; --ink: #f3b7d3" data-name="Prisma" data-desc="Le hablo a la base en TypeScript y me entiende. Lo usé en el backend de PlayCode."><span class="cap"><i class="devicon-prisma-original" aria-hidden="true"></i><span class="key-label">Prisma</span></span></button>
               </div>
             </div>
             <div class="cluster cluster--hw" style="--n: 3">
               <span class="silk">hardware</span>
               <div class="keys">
-                <button type="button" class="key" aria-pressed="false" style="--cap: #00599c; --ink: #f7f7f8" data-name="C/C++" data-desc="Acá un punto y coma de menos deja al perro sin cenar. Es el firmware de NutriPet."><span class="cap"><i class="devicon-cplusplus-plain" aria-hidden="true"></i><span class="key-label">C/C++</span></span></button>
-                <button type="button" class="key" aria-pressed="false" style="--cap: #00979d; --ink: #101114" data-name="Arduino" data-desc="El IDE donde NutriPet aprendió a contar porciones."><span class="cap"><i class="devicon-arduino-plain" aria-hidden="true"></i><span class="key-label">Arduino</span></span></button>
-                <button type="button" class="key" aria-pressed="false" style="--cap: #e7352c; --ink: #101114" data-name="ESP8266" data-desc="Una plaquita con WiFi que sirve una web entera. El cerebro de NutriPet."><span class="cap"><i class="ph ph-cpu" aria-hidden="true"></i><span class="key-label">ESP8266</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #a993f2; --side: #8068d3; --ink: #26155e" data-name="C/C++" data-desc="Acá un punto y coma de menos deja al perro sin cenar. Es el firmware de NutriPet."><span class="cap"><i class="devicon-cplusplus-plain" aria-hidden="true"></i><span class="key-label">C/C++</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #f6a978; --side: #d68152; --ink: #4a1f07" data-name="Arduino" data-desc="El IDE donde NutriPet aprendió a contar porciones."><span class="cap"><i class="devicon-arduino-plain" aria-hidden="true"></i><span class="key-label">Arduino</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #f39aa4; --side: #d1717d; --ink: #520e18" data-name="ESP8266" data-desc="Una plaquita con WiFi que sirve una web entera. El cerebro de NutriPet."><span class="cap"><i class="ph ph-cpu" aria-hidden="true"></i><span class="key-label">ESP8266</span></span></button>
               </div>
             </div>
             <div class="cluster cluster--tools" style="--n: 3">
               <span class="silk">herramientas</span>
               <div class="keys">
-                <button type="button" class="key" aria-pressed="false" style="--cap: #f05032; --ink: #101114" data-name="Git" data-desc="Mi máquina del tiempo para cuando algo andaba ayer. Versiona todos estos proyectos."><span class="cap"><i class="devicon-git-plain" aria-hidden="true"></i><span class="key-label">Git</span></span></button>
-                <button type="button" class="key" aria-pressed="false" style="--cap: #24292f; --ink: #f7f7f8" data-name="GitHub" data-desc="Donde vive el código de todo lo que ves acá. En PlayCode están mis commits en equipo."><span class="cap"><i class="devicon-github-original" aria-hidden="true"></i><span class="key-label">GitHub</span></span></button>
-                <button type="button" class="key" aria-pressed="false" style="--cap: #007acc; --ink: #f7f7f8" data-name="VS Code" data-desc="Mi editor de todos los días, con más extensiones de las que admito."><span class="cap"><i class="devicon-vscode-plain" aria-hidden="true"></i><span class="key-label">VS Code</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #a9d99a; --side: #83b874; --ink: #1d3d14" data-name="Git" data-desc="Mi máquina del tiempo para cuando algo andaba ayer. Versiona todos estos proyectos."><span class="cap"><i class="devicon-git-plain" aria-hidden="true"></i><span class="key-label">Git</span></span></button>
+                <button type="button" class="key key--dark" aria-pressed="false" style="--cap: #3a3a42; --side: #232328; --ink: #ecebf0" data-name="GitHub" data-desc="Donde vive el código de todo lo que ves acá. En PlayCode están mis commits en equipo."><span class="cap"><i class="devicon-github-original" aria-hidden="true"></i><span class="key-label">GitHub</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #7fb7f5; --side: #5a92d6; --ink: #0d3363" data-name="VS Code" data-desc="Mi editor de todos los días, con más extensiones de las que admito."><span class="cap"><i class="devicon-vscode-plain" aria-hidden="true"></i><span class="key-label">VS Code</span></span></button>
               </div>
             </div>
             </div>
@@ -258,46 +267,128 @@
     </section>
 
     <!-- SOBRE MÍ -->
-    <section class="section" id="sobre-mi">
-      <div class="container about">
-        <div class="about-img reveal">
-          <svg class="spark" aria-hidden="true" viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 3l3 8M15 13l5-5M17 22h10"/></svg>
-          <img src="assets/img/about.jpg" alt="Escritorio con laptop y planta" />
+    <section class="about" id="sobre-mi">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <h2>Hola, soy Antonella <span class="accent">Boccalandro</span></h2>
+          <p class="about-lead">Estoy terminando la Tecnicatura Superior en Desarrollo de Software. Arranqué por el lado menos esperado: en primer año programé un dispensador de comida para mascotas, con placa, firmware y su propia interfaz. Este año me metí de lleno en la web e hice tiendas online, un sistema de turnos y una plataforma educativa.</p>
+          <p>Con cada trabajo me pasa lo mismo: la consigna es el punto de partida, no el final. Siempre termino sumando funciones que no me pidieron, cuidando el diseño y buscando la vuelta para que quede lo mejor posible. Me gusta que cada proyecto tenga algo mío.</p>
+          <ul class="about-chips">
+            <li><i class="ph ph-browser" aria-hidden="true"></i>Desarrollo web</li>
+            <li><i class="ph ph-squares-four" aria-hidden="true"></i>Aplicaciones</li>
+            <li><i class="ph ph-database" aria-hidden="true"></i>Bases de datos</li>
+          </ul>
         </div>
-        <div class="about-text reveal">
-          <p class="eyebrow">Sobre mí</p>
-          <h2>Más que <span class="accent">código</span></h2>
-          <p>Soy estudiante de <strong>la Tecnicatura en Desarrollo de Software</strong> y me apasiona crear, aprender y transformar ideas en soluciones reales.</p>
-          <p>Me interesa especialmente el desarrollo web, la creación de proyectos útiles y seguir creciendo en el mundo de la tecnología.</p>
-          <p>Actualmente estoy buscando oportunidades para seguir desarrollándome profesionalmente y formar parte de proyectos desafiantes.</p>
+
+        <div class="about-visual tilt-scene reveal">
+          <div class="about-stack tilt tilt--pointer">
+            <p class="hand hand--ideas" aria-hidden="true">
+              Ideas, código,<br />proyectos
+              <svg viewBox="0 0 80 60" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6c4 22 22 40 62 44" /><path d="M58 40l10 10-13 4" /></svg>
+            </p>
+            <p class="hand hand--futuro" aria-hidden="true">
+              Cada proyecto<br />con algo mío
+              <svg viewBox="0 0 80 60" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M70 8c-6 24-26 40-60 42" /><path d="M20 40L9 50l13 5" /></svg>
+            </p>
+
+            <figure class="editor" aria-label="Archivo sobre_mi.py con algunos datos sobre mí">
+              <div class="editor-bar" aria-hidden="true">
+                <span class="editor-dots"><span></span><span></span><span></span></span>
+                <span class="editor-tab"><i class="devicon-python-plain colored"></i>sobre_mi.py</span>
+              </div>
+              <div class="editor-body">
+                <ul class="editor-tree" aria-hidden="true">
+                  <li class="is-open"><i class="ph ph-caret-down"></i><i class="ph ph-folder-simple"></i>portfolio</li>
+                  <li class="is-open lvl-1"><i class="ph ph-caret-down"></i><i class="ph ph-folder-simple"></i>src</li>
+                  <li class="lvl-2 is-active"><i class="devicon-python-plain colored"></i>sobre_mi.py</li>
+                  <li class="lvl-2"><i class="devicon-python-plain colored"></i>proyectos.py</li>
+                  <li class="lvl-2"><i class="devicon-python-plain colored"></i>tecnologias.py</li>
+                  <li class="lvl-1"><i class="ph ph-caret-right"></i><i class="ph ph-folder-simple"></i>assets</li>
+                  <li class="lvl-1"><i class="ph ph-file-text"></i>README.md</li>
+                </ul>
+<pre class="editor-gutter" aria-hidden="true">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre>
+<pre class="editor-code"><code><span class="c"># sobre_mi.py</span>
+<span class="k">class</span> <span class="n">Antonella</span>:
+    ubicacion = <span class="s">"Corrientes, Argentina"</span>
+    stack_favorito = [<span class="s">"Django"</span>, <span class="s">"React"</span>, <span class="s">"TypeScript"</span>]
+    <span class="c"># culpa de NutriPet:</span>
+    tambien_hablo = [<span class="s">"C/C++"</span>, <span class="s">"ESP8266"</span>]
+    combustible = [<span class="s">"café"</span>, <span class="s">"tereré"</span>]  <span class="c"># según el calor</span>
+
+    <span class="k">def</span> <span class="f">hacer_proyecto</span>(<span class="b">self</span>, consigna):
+        <span class="k">return</span> consigna + ideas_propias  <span class="c"># siempre</span>
+</code></pre>
+              </div>
+            </figure>
+
+            <div class="postit">
+              <ul>
+                <li><i class="ph ph-check-square" aria-hidden="true"></i>Aprender<span class="visually-hidden"> (hecho)</span></li>
+                <li><i class="ph ph-check-square" aria-hidden="true"></i>Crear<span class="visually-hidden"> (hecho)</span></li>
+                <li><i class="ph ph-check-square" aria-hidden="true"></i>Mejorar<span class="visually-hidden"> (hecho)</span></li>
+                <li><i class="ph ph-square" aria-hidden="true"></i>Lo que viene<span class="visually-hidden"> (pendiente)</span> <i class="ph ph-heart" aria-hidden="true"></i></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- CONTACTO -->
-    <section class="contact-wrap" id="contacto">
+    <section class="contact" id="contacto">
       <div class="container">
-        <div class="contact card reveal">
-          <div class="contact-text">
-            <p class="eyebrow">Contacto</p>
-            <h2>¿Trabajamos <span class="accent">juntos?</span></h2>
-            <p>Si tenés alguna propuesta o consulta, podés escribirme.</p>
+        <div class="contact-card reveal">
+          <div class="contact-copy">
+            <p class="availability"><span class="availability-dot" aria-hidden="true"></span>Abierta a propuestas</p>
+            <h2>¿Trabajamos juntos?</h2>
+            <p>Si tenés alguna propuesta, consulta o simplemente querés charlar sobre un proyecto, podés escribirme.</p>
+            <div class="contact-cta">
+              <a href="mailto:anttobocca@gmail.com" class="btn btn-primary">Escribirme <i class="ph ph-envelope-simple"></i></a>
+              <p class="hand hand--contact" aria-hidden="true">
+                <svg viewBox="0 0 70 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M66 30C48 36 22 34 8 14" /><path d="M6 26L7 12l13 3" /></svg>
+                respondo rápido,<br />lo prometo ♡
+              </p>
+            </div>
           </div>
-          <div class="contact-items">
-            <a href="mailto:anttobocca@gmail.com" class="contact-item">
-              <span class="ci-ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
-              <span><strong>Email</strong><small>anttobocca@gmail.com</small></span>
-            </a>
-            <a href="https://www.linkedin.com/in/boccalandro-antonella/" target="_blank" rel="noopener" class="contact-item">
-              <span class="ci-ico"><i class="devicon-linkedin-plain colored"></i></span>
-              <span><strong>LinkedIn</strong><small>/boccalandro-antonella</small></span>
-            </a>
-            <a href="https://github.com/anttobocc" target="_blank" rel="noopener" class="contact-item">
-              <span class="ci-ico"><i class="devicon-github-original"></i></span>
-              <span><strong>GitHub</strong><small>/anttobocc</small></span>
-            </a>
-          </div>
-          <a href="mailto:anttobocca@gmail.com" class="btn btn-primary">Contactarme <span class="arrow">→</span></a>
+
+          <ul class="contact-links">
+            <li class="contact-link" style="--tint: #f6c1d4">
+              <span class="cl-icon"><i class="ph ph-envelope-simple" aria-hidden="true"></i></span>
+              <span class="cl-text">
+                <span class="cl-label">Email</span>
+                <a class="cl-value" href="mailto:anttobocca@gmail.com">anttobocca@gmail.com</a>
+              </span>
+              <button type="button" class="cl-copy" data-copy="anttobocca@gmail.com">
+                <i class="ph ph-copy" aria-hidden="true"></i><span aria-live="polite">Copiar</span>
+              </button>
+              <i class="ph ph-arrow-up-right cl-arrow" aria-hidden="true"></i>
+            </li>
+            <li class="contact-link" style="--tint: #bcd3f2">
+              <span class="cl-icon"><i class="devicon-linkedin-plain" aria-hidden="true"></i></span>
+              <span class="cl-text">
+                <span class="cl-label">LinkedIn</span>
+                <a class="cl-value" href="https://www.linkedin.com/in/boccalandro-antonella/" target="_blank" rel="noopener">/in/boccalandro-antonella</a>
+              </span>
+              <i class="ph ph-arrow-up-right cl-arrow" aria-hidden="true"></i>
+            </li>
+            <li class="contact-link" style="--tint: #d4cffd">
+              <span class="cl-icon"><i class="devicon-github-original" aria-hidden="true"></i></span>
+              <span class="cl-text">
+                <span class="cl-label">GitHub</span>
+                <a class="cl-value" href="https://github.com/anttobocc" target="_blank" rel="noopener">/anttobocc</a>
+              </span>
+              <i class="ph ph-arrow-up-right cl-arrow" aria-hidden="true"></i>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -306,10 +397,11 @@
   <footer class="footer">
     <div class="container footer-inner">
       <a href="#inicio" class="logo">Antonella Boccalandro</a>
-      <p>Desarrollado y diseñado por Antonella Boccalandro <span class="heart">♡</span></p>
+      <p>Desarrollado y diseñado por anttobocc ♡</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=142"></script>
+  <script src="teclado3d.js?v=95" defer></script>
 </body>
 </html>
