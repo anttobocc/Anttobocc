@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" />
   <link rel="preload" as="image" href="assets/img/capricho.webp" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=9" />
 </head>
 <body>
 
@@ -74,163 +74,185 @@
     </section>
 
     <!-- PROYECTOS -->
-    <section class="section" id="proyectos">
+    <section class="section projects" id="proyectos">
       <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow line">Proyectos destacados</p>
-            <h2>Mis <span class="accent">proyectos</span></h2>
-          </div>
-          <p class="section-desc">Algunos de los proyectos en los que he trabajado, utilizando distintas tecnologías y resolviendo problemas reales.</p>
-          <a href="https://github.com/anttobocc?tab=repositories" target="_blank" rel="noopener" class="link-arrow">Ver todos los proyectos <span>→</span></a>
-        </div>
+        <header class="section-intro">
+          <h2>Proyectos</h2>
+          <p>Proyectos completos, de la base de datos a la interfaz. Varios están inspirados en emprendimientos reales de Corrientes.</p>
+        </header>
 
-        <div class="projects-grid">
-          <article class="card project reveal">
-            <div class="project-img"><img src="assets/img/capricho.png" alt="Capricho" style="object-position: top" /></div>
-            <div class="project-body">
-              <h3>Capricho</h3>
-              <p>Sitio web para un emprendimiento gastronómico con catálogo de productos, pedidos por WhatsApp y panel de administración.</p>
-              <ul class="tags"><li>Django</li><li>Python</li><li>SQLite</li><li>HTML</li><li>CSS</li></ul>
-              <div class="project-links">
-                <a href="https://github.com/anttobocc/Caprichos.Store.Ctes" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg> Ver proyecto</a>
-                <a href="https://github.com/anttobocc" target="_blank" rel="noopener" class="gh"><i class="devicon-github-original"></i> GitHub</a>
-              </div>
+        <!--
+          Para sumar la demo de un proyecto cuando esté publicado, descomentá
+          el enlace "Ver demo" de su tarjeta y completá el href.
+        -->
+
+        <h3 class="group-title">Inspirados en emprendimientos reales</h3>
+        <div class="featured-grid">
+          <article class="project-card project-card--lead reveal">
+            <div class="shot">
+              <img src="assets/img/capricho.webp" width="1200" height="800" loading="lazy" alt="Captura de la página de inicio de Capricho" />
+              <div class="shot-label"><span class="cat">Tienda online</span><h4>Capricho</h4></div>
             </div>
-          </article>
-
-          <article class="card project reveal">
-            <div class="project-img"><img src="assets/img/gestor-cursos.png" alt="Gestor de Cursos" /></div>
-            <div class="project-body">
-              <h3>Gestor de Cursos</h3>
-              <p>Sistema de gestión académica para cursos, estudiantes, profesores, asistencias y entregables.</p>
-              <ul class="tags"><li>Django</li><li>React</li><li>TypeScript</li><li>PostgreSQL</li></ul>
-              <div class="project-links">
-                <a href="https://github.com/anttobocc/ProyectoGestorCursos" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg> Ver proyecto</a>
-                <a href="https://github.com/anttobocc" target="_blank" rel="noopener" class="gh"><i class="devicon-github-original"></i> GitHub</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card project reveal">
-            <div class="project-img"><img src="assets/img/playcode.png" alt="PlayCode" /></div>
-            <div class="project-body">
-              <h3>PlayCode</h3>
-              <p>Aplicación web tipo playground para practicar código, con ejercicios y validación en tiempo real.</p>
-              <ul class="tags"><li>React</li><li>TypeScript</li><li>Vite</li><li>HTML</li><li>CSS</li></ul>
-              <div class="project-links">
-                <a href="https://github.com/mimbicaceres/playcode-app" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg> Ver proyecto</a>
-                <a href="https://github.com/anttobocc" target="_blank" rel="noopener" class="gh"><i class="devicon-github-original"></i> GitHub</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="card project reveal">
-            <div class="project-img"><img src="assets/img/nutrivid.png" alt="Nutrivid" style="object-position: top" /></div>
-            <div class="project-body">
-              <h3>Nutrivid</h3>
-              <p>Tienda online desarrollada para una dietética con múltiples sucursales, pensada para facilitar la consulta de productos y la realización de pedidos de forma rápida y sencilla.</p>
+            <div class="project-info">
+              <p>Tienda online inspirada en un emprendimiento gastronómico, con catálogo de productos, pedidos por WhatsApp y panel de administración.</p>
               <ul class="tags"><li>Django</li><li>Python</li><li>SQLite</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-              <div class="project-links">
-                <a href="https://github.com/anttobocc/Nutrivid" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg> Ver proyecto</a>
-                <a href="https://github.com/anttobocc" target="_blank" rel="noopener" class="gh"><i class="devicon-github-original"></i> GitHub</a>
+              <div class="project-actions">
+                <a href="https://github.com/anttobocc/Caprichos.Store.Ctes" target="_blank" rel="noopener" class="link-code"><i class="devicon-github-original"></i> Ver código</a>
+                <!-- <a href="" target="_blank" rel="noopener" class="link-demo">Ver demo <i class="ph ph-arrow-up-right"></i></a> -->
               </div>
             </div>
           </article>
 
-          <article class="card project reveal">
-            <div class="project-img"><img src="assets/img/mercenails.png" alt="MerceNails - Gestor de turnos" style="object-position: top" /></div>
-            <div class="project-body">
-              <h3>MerceNails - Gestor de turnos</h3>
-              <p>Sitio web para un emprendimiento de servicios de uñas con un sistema de gestión de turnos que permite a las clientas reservar, cancelar y recibir recordatorios, mientras la profesional administra su agenda desde un panel privado.</p>
-              <ul class="tags"><li>Django</li><li>Python</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>SQLite</li></ul>
-              <div class="project-links">
-                <a href="https://github.com/anttobocc/MerceNails---Gestor-de-turnos-" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg> Ver proyecto</a>
-                <a href="https://github.com/anttobocc" target="_blank" rel="noopener" class="gh"><i class="devicon-github-original"></i> GitHub</a>
+          <article class="project-card reveal">
+            <div class="shot">
+              <img src="assets/img/nutrivid.webp" width="1200" height="553" loading="lazy" alt="Captura de la página de inicio de Nutrivid" />
+              <div class="shot-label"><span class="cat">Tienda online</span><h4>Nutrivid</h4></div>
+            </div>
+            <div class="project-info">
+              <p>Tienda online pensada para una dietética con varias sucursales, para consultar productos y hacer pedidos de forma rápida y sencilla.</p>
+              <ul class="tags"><li>Django</li><li>Python</li><li>SQLite</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <div class="project-actions">
+                <a href="https://github.com/anttobocc/Nutrivid" target="_blank" rel="noopener" class="link-code"><i class="devicon-github-original"></i> Ver código</a>
+                <!-- <a href="" target="_blank" rel="noopener" class="link-demo">Ver demo <i class="ph ph-arrow-up-right"></i></a> -->
               </div>
             </div>
           </article>
 
-          <article class="card project reveal">
-            <div class="project-img"><img src="assets/img/nutripet.png" alt="NutriPet" style="object-position: top" /></div>
-            <div class="project-body">
-              <h3>NutriPet</h3>
-              <p>Proyecto académico basado en ESP8266 que integra hardware + firmware + interfaz web embebida, diseñado para calcular y dispensar porciones de alimento de manera automática y precisa.</p>
-              <ul class="tags"><li>ESP8266 (NodeMCU)</li><li>Arduino IDE</li><li>C/C++</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>HTTP</li><li>NTP</li><li>ThingSpeak</li></ul>
-              <div class="project-links">
-                <a href="https://github.com/anttobocc/NutriPet-iot-esp8266" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg> Ver proyecto</a>
-                <a href="https://github.com/anttobocc" target="_blank" rel="noopener" class="gh"><i class="devicon-github-original"></i> GitHub</a>
+          <article class="project-card reveal">
+            <div class="shot">
+              <img src="assets/img/mercenails.webp" width="1200" height="630" loading="lazy" alt="Captura de la página de inicio de MerceNails" />
+              <div class="shot-label"><span class="cat">Gestor de turnos</span><h4>MerceNails</h4></div>
+            </div>
+            <div class="project-info">
+              <p>Sitio para un estudio de uñas con gestor de turnos: las clientas reservan, cancelan y reciben recordatorios, y la profesional administra su agenda desde un panel privado.</p>
+              <ul class="tags"><li>Django</li><li>Python</li><li>SQLite</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <div class="project-actions">
+                <a href="https://github.com/anttobocc/MerceNails---Gestor-de-turnos-" target="_blank" rel="noopener" class="link-code"><i class="devicon-github-original"></i> Ver código</a>
+                <!-- <a href="" target="_blank" rel="noopener" class="link-demo">Ver demo <i class="ph ph-arrow-up-right"></i></a> -->
               </div>
             </div>
           </article>
         </div>
+
+        <article class="hw reveal">
+          <div class="hw-text">
+            <span class="cat">Hardware + firmware</span>
+            <h3>NutriPet</h3>
+            <p>Proyecto académico basado en ESP8266 que integra hardware, firmware e interfaz web embebida, diseñado para calcular y dispensar porciones de alimento de manera automática y precisa.</p>
+            <dl class="hw-stack">
+              <div><dt>Placa y firmware</dt><dd><ul class="tags"><li>ESP8266 (NodeMCU)</li><li>Arduino IDE</li><li>C/C++</li></ul></dd></div>
+              <div><dt>Interfaz embebida</dt><dd><ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></dd></div>
+              <div><dt>Conectividad</dt><dd><ul class="tags"><li>HTTP</li><li>NTP</li><li>ThingSpeak</li></ul></dd></div>
+            </dl>
+            <div class="project-actions">
+              <a href="https://github.com/anttobocc/NutriPet-iot-esp8266" target="_blank" rel="noopener" class="link-code"><i class="devicon-github-original"></i> Ver código</a>
+            </div>
+          </div>
+          <figure class="hw-shot">
+            <img src="assets/img/nutripet.webp" width="748" height="817" loading="lazy" alt="Interfaz web de NutriPet con el estado del dispensador y los horarios de comida" />
+            <figcaption>La interfaz la sirve el propio ESP8266.</figcaption>
+          </figure>
+        </article>
+
+        <h3 class="group-title">Otros proyectos</h3>
+        <div class="others-grid">
+          <article class="project-row reveal">
+            <img src="assets/img/gestor-cursos.webp" width="1200" height="800" loading="lazy" alt="Captura de EduControl, el gestor de cursos" />
+            <div>
+              <span class="cat">Sistema de gestión</span>
+              <h4>Gestor de Cursos</h4>
+              <p>Sistema de gestión académica para cursos, estudiantes, profesores, asistencias y entregables.</p>
+              <ul class="tags"><li>Django</li><li>React</li><li>TypeScript</li><li>PostgreSQL</li><li>Bootstrap</li></ul>
+              <div class="project-actions">
+                <a href="https://github.com/anttobocc/ProyectoGestorCursos" target="_blank" rel="noopener" class="link-code"><i class="devicon-github-original"></i> Ver código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-row reveal">
+            <img src="assets/img/playcode.webp" width="1200" height="541" loading="lazy" alt="Captura de la pantalla de inicio de PlayCode" />
+            <div>
+              <span class="cat">Web app</span>
+              <h4>PlayCode</h4>
+              <p>Aplicación web tipo playground para practicar código, con ejercicios y validación en tiempo real.</p>
+              <ul class="tags"><li>React</li><li>TypeScript</li><li>Vite</li><li>Tailwind</li><li>Node.js</li><li>Express</li><li>Prisma</li><li>PostgreSQL</li></ul>
+              <div class="project-actions">
+                <a href="https://github.com/mimbicaceres/playcode-app" target="_blank" rel="noopener" class="link-code"><i class="devicon-github-original"></i> Ver código</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <a href="https://github.com/anttobocc?tab=repositories" target="_blank" rel="noopener" class="more-link">Más proyectos en GitHub <i class="ph ph-arrow-up-right"></i></a>
       </div>
     </section>
 
     <!-- TECNOLOGÍAS -->
-    <section class="section section-alt" id="tecnologias">
+    <section class="section tech" id="tecnologias">
       <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow line">Tecnologías</p>
-            <h2>Herramientas <span class="accent">que utilizo</span></h2>
-          </div>
-          <p class="section-desc right">Estas son algunas de las tecnologías y herramientas con las que trabajo en mis proyectos.</p>
-        </div>
+        <header class="section-intro">
+          <h2>Tecnologías</h2>
+          <p>Mi stack, tecla por tecla. Pasá el mouse o tocá una para ver dónde la usé.</p>
+        </header>
 
-        <div class="tech-grid">
-          <div class="card tech reveal">
-            <div class="tech-title">
-              <span class="tech-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
-              Frontend
+        <div class="pad-wrap">
+          <div class="pad" id="pad">
+            <div class="pad-row pad-row--top">
+            <div class="cluster cluster--front" style="--n: 8">
+              <span class="silk">frontend</span>
+              <div class="keys">
+                <button type="button" class="key" aria-pressed="false" style="--cap: #61dafb; --ink: #101114" data-name="React" data-desc="Pienso en componentes hasta cuando armo la lista del súper. Está en Gestor de Cursos y en PlayCode."><span class="cap"><i class="devicon-react-original" aria-hidden="true"></i><span class="key-label">React</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #3178c6; --ink: #f7f7f8" data-name="TypeScript" data-desc="JavaScript, pero con alguien que te avisa antes de que explote. Gestor de Cursos y PlayCode."><span class="cap"><i class="devicon-typescript-plain" aria-hidden="true"></i><span class="key-label">TypeScript</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #f7df1e; --ink: #101114" data-name="JavaScript" data-desc="El que le da vida a los botones. Anda suelto en Capricho, Nutrivid, MerceNails y la interfaz de NutriPet."><span class="cap"><i class="devicon-javascript-plain" aria-hidden="true"></i><span class="key-label">JavaScript</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #e34f26; --ink: #101114" data-name="HTML" data-desc="Los cimientos. Nadie los aplaude, pero sin ellos se caen Capricho, Nutrivid, MerceNails y la pantalla de NutriPet."><span class="cap"><i class="devicon-html5-plain" aria-hidden="true"></i><span class="key-label">HTML</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #264de4; --ink: #f7f7f8" data-name="CSS" data-desc="Centrar un div ya no me quita el sueño. Le dio estilo a Capricho, Nutrivid, MerceNails y NutriPet."><span class="cap"><i class="devicon-css3-plain" aria-hidden="true"></i><span class="key-label">CSS</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #646cff; --ink: #101114" data-name="Vite" data-desc="Guardo y ya recargó, antes de que se enfríe el mate. Lo usé en PlayCode."><span class="cap"><i class="devicon-vitejs-plain" aria-hidden="true"></i><span class="key-label">Vite</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #7952b3; --ink: #f7f7f8" data-name="Bootstrap" data-desc="Botones prolijos sin pelearme con el CSS. Le puso los componentes a Gestor de Cursos."><span class="cap"><i class="devicon-bootstrap-plain" aria-hidden="true"></i><span class="key-label">Bootstrap</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #38bdf8; --ink: #101114" data-name="Tailwind" data-desc="Clases cortitas, HTML largo, cero arrepentimiento. Le dio estilo a PlayCode."><span class="cap"><i class="devicon-tailwindcss-original" aria-hidden="true"></i><span class="key-label">Tailwind</span></span></button>
+              </div>
             </div>
-            <div class="tech-icons">
-              <i class="devicon-react-original colored" title="React"></i>
-              <i class="devicon-typescript-plain colored" title="TypeScript"></i>
-              <i class="devicon-html5-plain colored" title="HTML5"></i>
-              <i class="devicon-css3-plain colored" title="CSS3"></i>
-              <i class="devicon-bootstrap-plain colored" title="Bootstrap"></i>
-              <i class="devicon-tailwindcss-original colored" title="Tailwind CSS"></i>
+            <div class="cluster cluster--back" style="--n: 4">
+              <span class="silk">backend</span>
+              <div class="keys">
+                <button type="button" class="key" aria-pressed="false" style="--cap: #3776ab; --ink: #f7f7f8" data-name="Python" data-desc="Mi primer amor del backend. Corre debajo de Capricho, Nutrivid, MerceNails y Gestor de Cursos."><span class="cap"><i class="devicon-python-plain" aria-hidden="true"></i><span class="key-label">Python</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #0c4b33; --ink: #f7f7f8" data-name="Django" data-desc="Mi framework de cabecera. Está detrás de Capricho, Nutrivid, MerceNails y Gestor de Cursos, y nunca me pidió nada a cambio."><span class="cap"><i class="devicon-django-plain" aria-hidden="true"></i><span class="key-label">Django</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #5fa04e; --ink: #101114" data-name="Node.js" data-desc="JavaScript fuera del navegador, sin pedir permiso. Corre el servidor de PlayCode."><span class="cap"><i class="devicon-nodejs-plain" aria-hidden="true"></i><span class="key-label">Node.js</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #2b2b2b; --ink: #f7f7f8" data-name="Express" data-desc="Rutas, middlewares y a otra cosa. Arma la API de PlayCode."><span class="cap"><i class="devicon-express-original" aria-hidden="true"></i><span class="key-label">Express</span></span></button>
+              </div>
+            </div>
+            <div class="oled" aria-hidden="true">
+              <span class="oled-title" id="oledTitle">antonella@pad</span>
+              <p class="oled-text"><span id="oledText"></span><span class="oled-cursor">_</span></p>
+            </div>
+            </div>
+            <div class="pad-row">
+            <div class="cluster cluster--data" style="--n: 3">
+              <span class="silk">datos</span>
+              <div class="keys">
+                <button type="button" class="key" aria-pressed="false" style="--cap: #336791; --ink: #f7f7f8" data-name="PostgreSQL" data-desc="La base seria del grupo. Guarda los datos de Gestor de Cursos y PlayCode."><span class="cap"><i class="devicon-postgresql-plain" aria-hidden="true"></i><span class="key-label">PostgreSQL</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #0f5a7a; --ink: #f7f7f8" data-name="SQLite" data-desc="La base de datos que entra en un bolsillo. Ahí viven los catálogos de Capricho y Nutrivid, y los turnos de MerceNails."><span class="cap"><i class="devicon-sqlite-plain" aria-hidden="true"></i><span class="key-label">SQLite</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #2d3748; --ink: #f7f7f8" data-name="Prisma" data-desc="Le hablo a la base en TypeScript y me entiende. Lo usé en el backend de PlayCode."><span class="cap"><i class="devicon-prisma-original" aria-hidden="true"></i><span class="key-label">Prisma</span></span></button>
+              </div>
+            </div>
+            <div class="cluster cluster--hw" style="--n: 3">
+              <span class="silk">hardware</span>
+              <div class="keys">
+                <button type="button" class="key" aria-pressed="false" style="--cap: #00599c; --ink: #f7f7f8" data-name="C/C++" data-desc="Acá un punto y coma de menos deja al perro sin cenar. Es el firmware de NutriPet."><span class="cap"><i class="devicon-cplusplus-plain" aria-hidden="true"></i><span class="key-label">C/C++</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #00979d; --ink: #101114" data-name="Arduino" data-desc="El IDE donde NutriPet aprendió a contar porciones."><span class="cap"><i class="devicon-arduino-plain" aria-hidden="true"></i><span class="key-label">Arduino</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #e7352c; --ink: #101114" data-name="ESP8266" data-desc="Una plaquita con WiFi que sirve una web entera. El cerebro de NutriPet."><span class="cap"><i class="ph ph-cpu" aria-hidden="true"></i><span class="key-label">ESP8266</span></span></button>
+              </div>
+            </div>
+            <div class="cluster cluster--tools" style="--n: 3">
+              <span class="silk">herramientas</span>
+              <div class="keys">
+                <button type="button" class="key" aria-pressed="false" style="--cap: #f05032; --ink: #101114" data-name="Git" data-desc="Mi máquina del tiempo para cuando algo andaba ayer. Versiona todos estos proyectos."><span class="cap"><i class="devicon-git-plain" aria-hidden="true"></i><span class="key-label">Git</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #24292f; --ink: #f7f7f8" data-name="GitHub" data-desc="Donde vive el código de todo lo que ves acá. En PlayCode están mis commits en equipo."><span class="cap"><i class="devicon-github-original" aria-hidden="true"></i><span class="key-label">GitHub</span></span></button>
+                <button type="button" class="key" aria-pressed="false" style="--cap: #007acc; --ink: #f7f7f8" data-name="VS Code" data-desc="Mi editor de todos los días, con más extensiones de las que admito."><span class="cap"><i class="devicon-vscode-plain" aria-hidden="true"></i><span class="key-label">VS Code</span></span></button>
+              </div>
+            </div>
             </div>
           </div>
-
-          <div class="card tech reveal">
-            <div class="tech-title">
-              <span class="tech-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></span>
-              Backend
-            </div>
-            <div class="tech-icons">
-              <i class="devicon-python-plain colored" title="Python"></i>
-              <i class="devicon-django-plain colored" title="Django"></i>
-              <i class="devicon-nodejs-plain colored" title="Node.js"></i>
-              <i class="devicon-express-original" title="Express"></i>
-            </div>
-          </div>
-
-          <div class="card tech reveal">
-            <div class="tech-title">
-              <span class="tech-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg></span>
-              Bases de datos
-            </div>
-            <div class="tech-icons">
-              <i class="devicon-postgresql-plain colored" title="PostgreSQL"></i>
-              <i class="devicon-sqlite-plain colored" title="SQLite"></i>
-              <i class="devicon-prisma-original" title="Prisma"></i>
-            </div>
-          </div>
-
-          <div class="card tech reveal">
-            <div class="tech-title">
-              <span class="tech-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
-              Herramientas
-            </div>
-            <div class="tech-icons">
-              <i class="devicon-git-plain colored" title="Git"></i>
-              <i class="devicon-github-original" title="GitHub"></i>
-              <i class="devicon-vscode-plain colored" title="VS Code"></i>
-              <i class="devicon-figma-plain colored" title="Figma"></i>
-            </div>
-          </div>
+          <p class="visually-hidden" aria-live="polite" id="oledLive"></p>
         </div>
       </div>
     </section>

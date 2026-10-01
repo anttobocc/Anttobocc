@@ -55,3 +55,50 @@ const revealObserver = new IntersectionObserver(
   { threshold: 0.12 }
 );
 document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
+
+// Macropad de tecnologías: cada tecla escribe su descripción en la pantalla
+const pad = document.getElementById("pad");
+if (pad) {
+  const keys = pad.querySelectorAll(".key");
+  const oledTitle = document.getElementById("oledTitle");
+  const oledText = document.getElementById("oledText");
+  const oledLive = document.getElementById("oledLive");
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
+  let typing = null;
+  let current = null;
+
+  oledText.textContent = finePointer.matches ? "pasá el mouse por una tecla" : "tocá una tecla";
+
+  function write(text) {
+    clearInterval(typing);
+    if (reduceMotion.matches) {
+      oledText.textContent = text;
+      return;
+    }
+    let i = 0;
+    oledText.textContent = "";
+    typing = setInterval(() => {
+      i += 2;
+      oledText.textContent = text.slice(0, i);
+      if (i >= text.length) clearInterval(typing);
+    }, 16);
+  }
+
+  function select(key) {
+    if (key === current) return;
+    current = key;
+    keys.forEach((k) => k.setAttribute("aria-pressed", String(k === key)));
+    oledTitle.textContent = key.dataset.name.toLowerCase();
+    write(key.dataset.desc);
+    oledLive.textContent = `${key.dataset.name}: ${key.dataset.desc}`;
+  }
+
+  keys.forEach((key) => {
+    key.addEventListener("click", () => select(key));
+    key.addEventListener("focus", () => select(key));
+    key.addEventListener("pointerenter", () => {
+      if (finePointer.matches) select(key);
+    });
+  });
+}
