@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="light">
+<html lang="es" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +7,8 @@
   <meta name="description" content="Portafolio de Antonella Boccalandro, desarrolladora de software." />
   <meta name="color-scheme" content="dark light" />
   <script>
-    // Tema antes del primer pintado: claro por defecto, respeta la elección guardada
-    try { document.documentElement.dataset.theme = localStorage.getItem("tema") || "light"; } catch (e) {}
+    // Tema antes del primer pintado: oscuro por defecto, respeta la elección guardada
+    try { document.documentElement.dataset.theme = localStorage.getItem("tema") || "dark"; } catch (e) {}
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,7 +34,7 @@
       <div class="nav-actions">
         <a href="https://github.com/anttobocc" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub"><i class="devicon-github-original"></i></a>
         <a href="https://www.linkedin.com/in/boccalandro-antonella/" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn"><i class="devicon-linkedin-plain"></i></a>
-        <button class="icon-btn" id="themeToggle" aria-label="Cambiar a modo oscuro">
+        <button class="icon-btn" id="themeToggle" aria-label="Cambiar a modo claro">
           <i class="ph ph-moon moon"></i><i class="ph ph-sun sun"></i>
         </button>
         <button class="icon-btn menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
@@ -106,7 +106,7 @@
               <ul class="tags"><li>Django</li><li>Python</li><li>SQLite</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
               <div class="project-actions">
                 <a href="https://github.com/anttobocc/Caprichos.Store.Ctes" target="_blank" rel="noopener" class="link-code"><i class="devicon-github-original"></i> Ver código</a>
-                <!-- <a href="" target="_blank" rel="noopener" class="link-demo">Ver demo <i class="ph ph-arrow-up-right"></i></a> -->
+                <a href="https://capricho.pythonanywhere.com/" target="_blank" rel="noopener" class="link-demo">Ver proyecto <i class="ph ph-arrow-up-right"></i></a>
               </div>
             </div>
           </article>
